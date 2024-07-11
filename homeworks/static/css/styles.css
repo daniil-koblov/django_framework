@@ -1,0 +1,17 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    height: 50;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Чтобы футер отображался поверх других элементов */
+}
+
+/* Устанавливаем отступ для контента, чтобы он не залезал в футер */
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+}
