@@ -6,10 +6,10 @@
     background-color: rgba(0, 0, 0, 0.05);
     text-align: center;
     padding: 10px 0;
-    z-index: 1000; /* Чтобы футер отображался поверх других элементов */
+    z-index: 1000;
 }
 
-/* Устанавливаем отступ для контента, чтобы он не залезал в футер */
+
 .content {
     display: flex;
     flex-direction: column;
