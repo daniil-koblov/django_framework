@@ -38,8 +38,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('total_amount', models.DecimalField(decimal_places=2, default=0, max_digits=100)),
                 ('order_date', models.DateTimeField(auto_now_add=True)),
-                ('buyer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='hw3.client')),
-                ('products', models.ManyToManyField(to='hw3.product')),
+                ('buyer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homework_3.client')),
+                ('products', models.ManyToManyField(to='homework_3.product')),
             ],
         ),
     ]

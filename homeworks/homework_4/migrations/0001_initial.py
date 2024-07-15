@@ -48,7 +48,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('total_amount', models.DecimalField(decimal_places=2, default=0, max_digits=100, validators=[django.core.validators.MinValueValidator(0)])),
                 ('order_date', models.DateTimeField(auto_now_add=True)),
-                ('buyer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='hw4.client')),
+                ('buyer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homework_4.client')),
             ],
             options={
                 'verbose_name': 'Заказ',
@@ -60,8 +60,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.PositiveIntegerField(default=1, validators=[django.core.validators.MinValueValidator(1)])),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='hw4.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='hw4.product')),
+                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homework_4.order')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homework_4.product')),
             ],
             options={
                 'verbose_name': 'Позиция заказа',
@@ -71,6 +71,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='order',
             name='products',
-            field=models.ManyToManyField(through='hw4.OrderItem', to='hw4.product'),
+            field=models.ManyToManyField(through='homework_4.OrderItem', to='homework_4.product'),
         ),
     ]

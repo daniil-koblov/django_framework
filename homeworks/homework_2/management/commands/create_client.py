@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from hw2.models import Client
+from homeworks.homework_2.models import Client
 
 
 class Command(BaseCommand):

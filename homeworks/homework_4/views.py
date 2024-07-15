@@ -16,7 +16,7 @@ def index(request):
         "title": "Главная страница",
     }
     logger.info("Index page accessed")
-    return render(request, "hw4/index.html", context)
+    return render(request, "homework_4/index.html", context)
 
 
 def orders(request, client_id: int = None):
@@ -53,7 +53,7 @@ def orders(request, client_id: int = None):
     else:
         order = Order.objects.all()
         context = {"title": f"Список всех заказов", "order": order}
-    return render(request, "hw4/orders.html", context)
+    return render(request, "homework_4/orders.html", context)
 
 
 def add_client(request):
@@ -72,7 +72,7 @@ def add_client(request):
     else:
         form = ClientForm()
     context = {"title": "Добавить клиента", "form": form}
-    return render(request, "hw4/new_client.html", context)
+    return render(request, "homework_4/new_client.html", context)
 
 
 def add_product(request):
@@ -93,7 +93,7 @@ def add_product(request):
     else:
         form = ProductForm()
     context = {"title": "Добавить товар", "form": form}
-    return render(request, "hw4/new_product.html", context)
+    return render(request, "homework_4/new_product.html", context)
 
 
 def add_order(request):
@@ -114,4 +114,4 @@ def add_order(request):
     else:
         form = OrderForm()
     context = {"title": "Сделать заказ", "form": form}
-    return render(request, "hw4/new_order.html", context)
+    return render(request, "homework_4/new_order.html", context)

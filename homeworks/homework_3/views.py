@@ -12,7 +12,7 @@ def index(request):
         "title": "Главная страница",
     }
     logger.info("Index page accessed")
-    return render(request, "hw3/index.html", context)
+    return render(request, "homework_3/index.html", context)
 
 
 def orders(request, client_id: int = None):
