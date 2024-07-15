@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class Hw4Config(AppConfig):
+class homework_4Config(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'homework_w4'
+    name = 'homework_4'
     verbose_name = "Управление магазином"

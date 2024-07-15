@@ -5,7 +5,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hw2', '0002_product_alter_client_register_date'),
+        ('homework_2', '0002_product_alter_client_register_date'),
     ]
 
     operations = [

@@ -23,9 +23,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("hw1.urls"), name="hw1"),
-    path("hw3/", include("hw3.urls"), name="hw3"),
-    path("hw4/", include("hw4.urls"), name="hw4"),
+    path("", include("homework_1.urls"), name="homework_1"),
+    path("homework_3/", include("homework_3.urls"), name="homework_3"),
+    path("homework_4/", include("homework_4.urls"), name="homework_4"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
