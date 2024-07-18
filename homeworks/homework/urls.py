@@ -26,6 +26,8 @@ urlpatterns = [
     path("", include("homework_1.urls"), name="homework_1"),
     path("homework_3/", include("homework_3.urls"), name="homework_3"),
     path("homework_4/", include("homework_4.urls"), name="homework_4"),
+    path('__debug__/', include("debug_toolbar.urls")),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
